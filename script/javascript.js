@@ -10,7 +10,9 @@ function nameAsk() {
 		nameAsk();
 	}
 	else {
+		document.write('<span id="naam">');
 		document.write(naam);
+		document.write("</span>");
 		document.write("<br>");
 	}
 }
