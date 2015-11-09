@@ -22,5 +22,10 @@ function datumAsk() {
 	}
 	else{
 		document.write(datum);
+		document.write("<br>");
 	}
+}
+
+function modemAsk() {
+	
 }
