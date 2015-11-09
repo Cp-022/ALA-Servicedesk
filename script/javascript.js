@@ -2,6 +2,7 @@ console.log (5+4)
 alert("U start nu de log")
 nameAsk();
 datumAsk();
+modemAsk();
 function nameAsk() {
 	var naam = prompt("Geef de naam");
 	if (naam.length === 0){
@@ -27,5 +28,13 @@ function datumAsk() {
 }
 
 function modemAsk() {
-	
+	var modem = prompt("Wat voor type modem gebruikt de klant?");
+	if (modem.length === 0){
+		alert("Geef een geldige modem op");
+		modemAsk();
+	}
+	else{
+		document.write(modem);
+		document.write("<br>");
+	}
 }
