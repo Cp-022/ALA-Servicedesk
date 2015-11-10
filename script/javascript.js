@@ -14,9 +14,7 @@ function nameAsk() {
 		nameAsk();
 	}
 	else {
-		document.write('<span id="naam">');
-		document.write(naam);
-		document.write("</span>");
+		document.write("<p>Naam:" + naam + "</p>");
 		document.write("<br>");
 	}
 }
@@ -28,9 +26,7 @@ function datumAsk() {
 		datumAsk();
 	}
 	else{
-		document.write("<span id = 'datum'>");
-		document.write(datum);
-		document.write("</span>");
+		document.write("<p>Datum:" + datum + "</p>");
 		document.write("<br>");
 	}
 }
@@ -42,9 +38,7 @@ function modemAsk() {
 		modemAsk();
 	}
 	else{
-		document.write("<span id= 'modem'>");
-		document.write(modem);
-		document.write("</span>");
+		document.write("<p>Modem:" + modem) + "</p>";
 		document.write("<br>");
 	}
 }
@@ -56,13 +50,11 @@ function klachtAsk() {
 		if (browsen = true){
 			document.write("<span id='browsen'>")
 			browskan = ("De klant kan naar www.nu.nl");
-			document.write("De klant heeft geen problemen");
+			document.write("<p>De klant heeft geen problemen</p>");
 			document.write("</span>");
 			document.write("<br>");
-			document.write("<span id='allgegevens'>");
-			document.write("de gegevens zijn: <br>");
-			document.write(naam+datum+modem+browskan);
-			document.write("</span>");
+			document.write("<p> de gegevens zijn:</p> <br>");
+			document.write("<p>" + naam+datum+modem+browskan+ "</p>" );
 		}
 		else{
 			document.write("<br>");
