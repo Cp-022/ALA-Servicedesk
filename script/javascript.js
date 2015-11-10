@@ -36,7 +36,9 @@ function modemAsk() {
 		modemAsk();
 	}
 	else{
+		document.write("<span id= 'modem'>");
 		document.write(modem);
+		document.write("</span>");
 		document.write("<br>");
 	}
 }
