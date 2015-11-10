@@ -28,10 +28,21 @@ html{
 }
 
 .grandh1{
+	float:center;
+	text-align:center;
 	font-size:40px;
+}
+
+#nav{
+	float:center;
+	text-align:center;
 }
 
 #nav nav ol li{
 	list-style-type:none;
-	float:center;
+	display:inline-block;
+}
+
+#nav nav ol{
+	word-spacing:50px;
 }
