@@ -3,6 +3,7 @@ alert("U start nu de log")
 nameAsk();
 datumAsk();
 modemAsk();
+klachtAsk();
 function nameAsk() {
 	var naam = prompt("Geef de naam");
 	if (naam.length === 0){
@@ -42,13 +43,19 @@ function modemAsk() {
 }
 
 function klachtAsk() {
-	var klacht = prompt("Heeft de klant een klacht");
-	if (klacht.length === 0){
-		alert("Geef een geldige klacht op");
-		klachtAsk();
+	var klachtCheck = confirm("Heeft de klant een klacht?");
+	if (klachtCheck = true){
+		var klacht = prompt("Heeft de klant een klacht");
+		if (klacht.length === 0){
+			alert("Geef een geldige klacht op");
+			klachtAsk();
+		}
+		else{
+			document.write(klacht);
+			document.write("<br>");
+		}
 	}
 	else{
-		document.write(klacht);
-		document.write("<br>");
+		document.write(naam + datum + modem + klachtCheck + klacht);
 	}
 }
