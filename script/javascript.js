@@ -45,17 +45,17 @@ function modemAsk() {
 function klachtAsk() {
 	var klachtCheck = confirm("Heeft de klant een klacht?");
 	if (klachtCheck = true){
-		var klacht = prompt("Heeft de klant een klacht");
+		var browsen = prompt("Kunt u browsen naar www.nu.nl?");
 		if (klacht.length === 0){
 			alert("Geef een geldige klacht op");
 			klachtAsk();
 		}
 		else{
-			document.write(klacht);
+			document.write(browsen);
 			document.write("<br>");
 		}
 	}
 	else{
-		document.write(naam + datum + modem + klachtCheck + klacht);
+		document.write(naam + datum + modem + klachtCheck);
 	}
 }
