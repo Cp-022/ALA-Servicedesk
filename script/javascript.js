@@ -72,3 +72,7 @@ function klachtAsk() {
 		
 	}
 }
+
+function reset(){
+	window.location.reload();
+}
