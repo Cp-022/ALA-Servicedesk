@@ -69,7 +69,7 @@ function klachtAsk() {
 		}
 	}
 	else{
-		
+		/*EMPTY*/
 	}
 }
 
