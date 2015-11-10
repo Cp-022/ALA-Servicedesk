@@ -40,3 +40,15 @@ function modemAsk() {
 		document.write("<br>");
 	}
 }
+
+function klachtAsk() {
+	var klacht = prompt("Heeft de klant een klacht");
+	if (klacht.length === 0){
+		alert("Geef een geldige klacht op");
+		klachtAsk();
+	}
+	else{
+		document.write(klacht);
+		document.write("<br>");
+	}
+}
