@@ -24,7 +24,9 @@ function datumAsk() {
 		datumAsk();
 	}
 	else{
+		document.write("<span id = 'datum'>");
 		document.write(datum);
+		document.write("</span>");
 		document.write("<br>");
 	}
 }
