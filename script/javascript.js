@@ -56,6 +56,6 @@ function klachtAsk() {
 		}
 	}
 	else{
-		document.write(naam + datum + modem + klachtCheck);
+		
 	}
 }
