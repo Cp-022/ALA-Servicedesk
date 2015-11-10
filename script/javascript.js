@@ -46,11 +46,15 @@ function klachtAsk() {
 	if (klachtCheck = true){
 		browsen = confirm("Kunt u browsen naar www.nu.nl?");
 		if (browsen = true){
+			document.write("<span id='browsen'>")
 			browskan = ("De klant kan naar www.nu.nl");
 			document.write("De klant heeft geen problemen");
+			document.write("</span>");
 			document.write("<br>");
+			document.write("<span id='allgegevens'>");
 			document.write("de gegevens zijn: <br>");
 			document.write(naam+datum+modem+browskan);
+			document.write("</span>");
 		}
 		else{
 			document.write("<br>");
