@@ -45,7 +45,7 @@ function klachtAsk() {
 	if (klachtCheck = true){
 		browsen = confirm("Kunt u browsen naar www.nu.nl?");
 		if (browsen = true){
-			browskan = ("<p>De klant kan naar www.nu.nl</p>");
+			browskan = ("De klant kan naar www.nu.nl");
 			document.write("<p>De klant heeft geen problemen</p><br> <p>de gegevens zijn : </p> <br>" + "<p>" + naam+datum+modem+browskan+ "</p>" );
 		}
 		else{
@@ -59,4 +59,5 @@ function klachtAsk() {
 
 function reset(){
 	window.location.reload();
+	/*This function is only meant for reloading the page A.K.A. restarting the script*/
 }
