@@ -50,7 +50,7 @@ function klachtAsk() {
 		browsen = confirm("Kan de klant browsen naar www.nu.nl?");
 		if (browsen = true){
 			browskan = ("De klant kan naar www.nu.nl");
-			document.write("<p class = 'klacht'>De klant heeft geen problemen</p><p class = 'allegegevens'><span class= 'pre-info'>De gegevens zijn : </span>" + naam+datum+modem+browskan+"</p>");
+			document.write("<p class = 'allegegevens'><span class= 'pre-info'>De gegevens zijn : </span>" + naam+datum+modem+browskan+"</p>");
 		}
 		else{
 			/*EMPTY*/
