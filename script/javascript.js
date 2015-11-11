@@ -14,8 +14,7 @@ function nameAsk() {
 		nameAsk();
 	}
 	else {
-		document.write("<p>Naam:" + naam + "</p>");
-		document.write("<br>");
+		document.write("<p>Naam:" + naam + "</p>" + "<br>");
 	}
 }
 
@@ -26,8 +25,7 @@ function datumAsk() {
 		datumAsk();
 	}
 	else{
-		document.write("<p>Datum:" + datum + "</p>");
-		document.write("<br>");
+		document.write("<p>Datum:" + datum + "</p>"+ "<br>");
 	}
 }
 
