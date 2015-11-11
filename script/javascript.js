@@ -48,10 +48,8 @@ function klachtAsk() {
 	if (klachtCheck = true){
 		browsen = confirm("Kunt u browsen naar www.nu.nl?");
 		if (browsen = true){
-			document.write("<span id='browsen'>")
-			browskan = ("De klant kan naar www.nu.nl");
+			browskan = ("<p>De klant kan naar www.nu.nl</p>");
 			document.write("<p>De klant heeft geen problemen</p>");
-			document.write("</span>");
 			document.write("<br>");
 			document.write("<p> de gegevens zijn:</p> <br>");
 			document.write("<p>" + naam+datum+modem+browskan+ "</p>" );
