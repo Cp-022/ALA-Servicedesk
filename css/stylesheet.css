@@ -14,7 +14,7 @@ html{
 	float:left;
 }
 
-.naam, .datum, .modem, .klacht, .allegegevens{
+.naam, .datum, .modem, .klacht {
 	font-size:20px;
 	text-align:center;
 }
@@ -29,10 +29,6 @@ html{
 
 .modem{
 	/*EMPTY*/	
-}
-
-.allegegevens{
-	/*EMPTY*/
 }
 
 .grandh1{
