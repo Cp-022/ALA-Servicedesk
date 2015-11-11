@@ -6,6 +6,11 @@ nameAsk();
 datumAsk();
 modemAsk();
 klachtAsk();
+engels = 9;
+nederlands = 10;
+bio = 8;
+totaalcijfer = engels + nederlands + bio ;
+document.write(totaalcijfer / 3);
 
 function nameAsk() {
 	naam = prompt("Geef de naam");
@@ -14,7 +19,7 @@ function nameAsk() {
 		nameAsk();
 	}
 	else {
-		document.write("<p class = 'naam'>Naam: " + naam + "</p> <br>");
+		document.write("<p class = 'naam'><span class='pre-info'>Naam: </span>" + naam + "</p>");
 	}
 }
 
@@ -24,7 +29,7 @@ function datumAsk() {
 		datum = Date();
 	}
 	else{
-		document.write("<p class = 'datum'>Datum: " + datum + "</p> <br>");
+		document.write("<p class = 'datum'><span class='pre-info'>Datum: </span>" + datum + "</p>");
 	}
 }
 
@@ -35,7 +40,7 @@ function modemAsk() {
 		modemAsk();
 	}
 	else{
-		document.write("<p class = 'modem'>Modem: " + modem + "</p> <br>");
+		document.write("<p class = 'modem'><span class='pre-info'>Modem: </span>" + modem + "</p>");
 	}
 }
 
@@ -45,7 +50,7 @@ function klachtAsk() {
 		browsen = confirm("Kan de klant browsen naar www.nu.nl?");
 		if (browsen = true){
 			browskan = ("De klant kan naar www.nu.nl");
-			document.write("<p class = 'klacht'>De klant heeft geen problemen</p><br> <p class = 'allegegevens'>de gegevens zijn : <br>" + naam+datum+modem+browskan+"</p>");
+			document.write("<p class = 'klacht'>De klant heeft geen problemen</p><p class = 'allegegevens'><span class= 'pre-info'>De gegevens zijn : </span>" + naam+datum+modem+browskan+"</p>");
 		}
 		else{
 			/*EMPTY*/

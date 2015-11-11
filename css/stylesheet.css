@@ -6,25 +6,37 @@ html{
 	width:auto;
 }
 
-.naam{
-	border: 1px solid black;
+#script{
+	border:1px solid black;
+}
+
+.pre-info{
+	float:left;
+}
+
+.naam, .datum, .modem, .klacht, .allegegevens{
 	font-size:20px;
+	text-align:center;
+}
+
+.naam{
+	/*EMPTY*/
 }
 
 .datum{
-	font-size:20px;
+	/*EMPTY*/
 }
 
 .modem{
-	font-size:20px;	
+	/*EMPTY*/	
 }
 
 .klacht{
-	font-size:20px;	
+	/*EMPTY*/	
 }
 
 .allegegevens{
-	font-size:20px;	
+	/*EMPTY*/
 }
 
 .grandh1{
@@ -41,6 +53,7 @@ html{
 #nav nav ol li{
 	list-style-type:none;
 	display:inline-block;
+	float:center;
 }
 
 #nav nav ol{
