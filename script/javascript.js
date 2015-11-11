@@ -14,7 +14,7 @@ function nameAsk() {
 		nameAsk();
 	}
 	else {
-		document.write("<p class = 'naam'><span class='pre-info'>Naam: </span>" + naam + " <button id='naamwijzig' class='wijzig'>Wijzig</button></p>");
+		document.write("<p class = 'naam'><span class='pre-info'>Naam: </span>" + naam + " <button id='naamwijzig' class='wijzig' onclick='naamWijzig()'>Wijzig</button></p>");
 	}
 }
 
@@ -35,7 +35,7 @@ function modemAsk() {
 		modemAsk();
 	}
 	else{
-		document.write("<p class = 'modem'><span class='pre-info'>Modem: </span>" + modem + " <button id='modemwijzig' class = 'wijzig'>Wijzig</button></p>");
+		document.write("<p class = 'modem'><span class='pre-info'>Modem: </span>" + modem + " <button id='modemwijzig' class = 'wijzig' onclick='modemWijzig()'>Wijzig</button></p>");
 	}
 }
 
@@ -58,4 +58,26 @@ function klachtAsk() {
 function reset(){
 	window.location.reload();
 	/*This function is only meant for reloading the page A.K.A. restarting the script*/
+}
+
+function naamWijzig(){
+	naam = prompt("Geef de naam");
+	if (naam.length === 0){
+		alert("Geen naam gegeven");
+		nameAsk();
+	}
+	else {
+		/*EMPTY*/		
+	}
+}
+
+function modemWijzig(){
+	modem = prompt("Wat voor type modem gebruikt de klant?");
+	if (modem.length === 0){
+		alert("Geef een geldige modem op");
+		modemAsk();
+	}
+	else{
+		document.write("<p class = 'modem'><span class='pre-info'>Modem: </span>" + modem + " <button id='modemwijzig' class = 'wijzig' onclick='modemWijzig'>Wijzig</button></p>");
+	}
 }
