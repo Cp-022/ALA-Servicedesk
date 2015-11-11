@@ -38,8 +38,7 @@ function modemAsk() {
 		modemAsk();
 	}
 	else{
-		document.write("<p>Modem:" + modem) + "</p>";
-		document.write("<br>");
+		document.write("<p>Modem:" + modem + "</p>" + "<br>");
 	}
 }
 
