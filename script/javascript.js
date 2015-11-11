@@ -14,7 +14,7 @@ function nameAsk() {
 		nameAsk();
 	}
 	else {
-		document.write("<p class = 'naam'><span class='pre-info'>Naam: </span>" + naam + "</p>");
+		document.write("<p class = 'naam'><span class='pre-info'>Naam: </span>" + naam + " <button id='naamwijzig' class='wijzig'>Wijzig</button></p>");
 	}
 }
 
@@ -35,7 +35,7 @@ function modemAsk() {
 		modemAsk();
 	}
 	else{
-		document.write("<p class = 'modem'><span class='pre-info'>Modem: </span>" + modem + "</p>");
+		document.write("<p class = 'modem'><span class='pre-info'>Modem: </span>" + modem + " <button id='modemwijzig' class = 'wijzig'>Wijzig</button></p>");
 	}
 }
 
