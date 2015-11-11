@@ -19,10 +19,9 @@ function nameAsk() {
 }
 
 function datumAsk() {
-	datum = prompt("Geef de datum (dd-mm-jjjj)");
-	if (datum.length <= 9) {
-		alert("Geef een geldige datum op");
-		datumAsk();
+	datum = Date();
+	if (datum.length === 0){
+		datum = Date();
 	}
 	else{
 		document.write("<p class = 'datum'>Datum: " + datum + "</p> <br>");
