@@ -48,7 +48,7 @@ function klachtAsk() {
 			document.write("<p class = 'allegegevens'><span class= 'pre-info'>De gegevens zijn : </span>" + naam+datum+modem+browskan+"</p>");
 		}
 		else{
-			/*EMPTY*/
+			
 		}
 	}
 	else{
