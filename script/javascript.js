@@ -14,7 +14,7 @@ function nameAsk() {
 		nameAsk();
 	}
 	else {
-		document.write("<p>Naam: " + naam + "</p>" + "<br>");
+		document.write("<p class = "naam">Naam: " + naam + "</p>" + "<br>");
 	}
 }
 
@@ -25,7 +25,7 @@ function datumAsk() {
 		datumAsk();
 	}
 	else{
-		document.write("<p>Datum: " + datum + "</p>"+ "<br>");
+		document.write("<p class = "datum">Datum: " + datum + "</p>"+ "<br>");
 	}
 }
 
@@ -36,17 +36,17 @@ function modemAsk() {
 		modemAsk();
 	}
 	else{
-		document.write("<p>Modem: " + modem + "</p>" + "<br>");
+		document.write("<p class = "modem">Modem: " + modem + "</p>" + "<br>");
 	}
 }
 
 function klachtAsk() {
 	var klachtCheck = confirm("Heeft de klant een klacht?");
 	if (klachtCheck = true){
-		browsen = confirm("Kunt u browsen naar www.nu.nl?");
+		browsen = confirm("Kan de klant browsen naar www.nu.nl?");
 		if (browsen = true){
 			browskan = ("De klant kan naar www.nu.nl");
-			document.write("<p>De klant heeft geen problemen</p><br> <p>de gegevens zijn : </p> <br>" + "<p>" + naam+datum+modem+browskan+ "</p>" );
+			document.write("<p class = "klacht">De klant heeft geen problemen</p><br> <p>de gegevens zijn : </p> <br>" + "<p>" + naam+datum+modem+browskan+ "</p>" );
 		}
 		else{
 			/*EMPTY*/

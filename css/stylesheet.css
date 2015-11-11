@@ -6,24 +6,24 @@ html{
 	width:auto;
 }
 
-#naam{
+.naam{
 	border: 1px solid black;
 	font-size:20px;
 }
 
-#datum{
+.datum{
 	font-size:20px;
 }
 
-#modem{
+.modem{
 	font-size:20px;	
 }
 
-#klacht{
+.klacht{
 	font-size:20px;	
 }
 
-#allegegevens{
+.allegegevens{
 	font-size:20px;	
 }
 
@@ -33,16 +33,16 @@ html{
 	font-size:40px;
 }
 
-#nav{
+.nav{
 	float:center;
 	text-align:center;
 }
 
-#nav nav ol li{
+.nav nav ol li{
 	list-style-type:none;
 	display:inline-block;
 }
 
-#nav nav ol{
+.nav nav ol{
 	word-spacing:50px;
 }
