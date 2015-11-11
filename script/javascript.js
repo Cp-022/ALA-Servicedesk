@@ -36,7 +36,7 @@ function modemAsk() {
 		modemAsk();
 	}
 	else{
-		document.write("<p>Modem:" + modem + "</p>" + "<br>");
+		document.write("<p>Modem: " + modem + "</p>" + "<br>");
 	}
 }
 
