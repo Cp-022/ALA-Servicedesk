@@ -6,11 +6,6 @@ nameAsk();
 datumAsk();
 modemAsk();
 klachtAsk();
-engels = 9;
-nederlands = 10;
-bio = 8;
-totaalcijfer = engels + nederlands + bio ;
-document.write(totaalcijfer / 3);
 
 function nameAsk() {
 	naam = prompt("Geef de naam");
