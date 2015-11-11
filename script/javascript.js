@@ -49,13 +49,13 @@ function klachtAsk() {
 		browsen = confirm("Kunt u browsen naar www.nu.nl?");
 		if (browsen = true){
 			browskan = ("<p>De klant kan naar www.nu.nl</p>");
-			document.write("<p>De klant heeft geen problemen</p>");
+			document.write("<p>De klant heeft geen problemen</p> <br> <p> de gegevens zijn</p> <br> <p>de gegevens zijn : </p> <br>");
 			document.write("<br>");
 			document.write("<p> de gegevens zijn:</p> <br>");
 			document.write("<p>" + naam+datum+modem+browskan+ "</p>" );
 		}
 		else{
-			document.write("<br>");
+			/*EMPTY*/
 		}
 	}
 	else{
