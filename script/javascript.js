@@ -1,20 +1,17 @@
 /*Made by Cp any use of copy/paste of this code WILL be reported to the copy n paste police!!, no seriously
 feel free to copy my code but PLEASE JUST GIVE ME CREDIT -__- Have a nice day*/
 
-function startScript() {
 alert("U start nu de log")
 loadTable();
 nameAsk();
 datumAsk();
 modemAsk();
 klachtAsk();
-}
 
-function loadTable{
-	belReden = new Array();
-	belReden[0] = "klacht";
-	belReden[1] = "abbonement";
-	belReden[2] = "informatie";
+function loadTable() {
+	belReden0 = "klacht";
+	belReden1 = "abbonement";
+	belReden2 = "informatie";
 }
 
 function nameAsk() {
@@ -50,27 +47,23 @@ function modemAsk() {
 }
 
 function klachtAsk() {
-	var klachtCheck = prompt("Waarom belt de klant");
-	if (klachtCheck.lowercase = belReden[0]){
+	klachtCheck = prompt("Waarom belt de klant");
+	klachtCheck = klachtCheck.toLowerCase();
+	if (klachtCheck === belReden0){
 		browsen = confirm("Kan de klant browsen naar www.nu.nl?");
 		if (browsen = true){
 			browskan = ("De klant kan naar www.nu.nl");
 		}
-		else if(klachtCheck.lowercase = belReden[0]) {
-			/*EMPTY*/
-		}
-		else if(klachtCheck.lowercase = belReden[1]) {
-			/*EMPTY*/	
-		}
-		else if(klachtCheck.lowercase = belReden[2]) {
-			/*EMPTY*/	
-		}
-		else{
-			/*EMPTY*/			
-		}
+	}
+	else if(klachtCheck === belReden1) {
+		/*EMPTY*/	
+	}
+	else if(klachtCheck === belReden2) {
+		/*EMPTY*/	
 	}
 	else{
-		/*EMPTY*/
+		alert("Geef een geldige klacht op");
+		klachtAsk();
 	}
 }
 
