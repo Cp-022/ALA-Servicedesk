@@ -14,7 +14,7 @@ function nameAsk() {
 		nameAsk();
 	}
 	else {
-		document.write("<p class = 'naam'><span class='pre-info'>Naam: </span>" + naam + " <button id='naamwijzig' class='wijzig' onclick='naamWijzig()'>Wijzig</button></p>");
+		document.write("<p class = 'naam'><span class='pre-info'>Naam: </span>" + "<span id = 'naam'>" + naam + " </span>" + "<button id='naamwijzig' class='wijzig' onclick='naamWijzig()'>Wijzig</button></p>");
 	}
 }
 
@@ -67,7 +67,7 @@ function naamWijzig(){
 		nameAsk();
 	}
 	else {
-		/*EMPTY*/		
+		document.getElementById("naam").innerHTML = naam;	
 	}
 }
 
