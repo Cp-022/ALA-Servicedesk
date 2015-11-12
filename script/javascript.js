@@ -42,7 +42,7 @@ function modemAsk() {
 		modemAsk();
 	}
 	else{
-		document.write("<p class = 'modem'><span class='pre-info'>Naam: </span>" + "<span id = 'modem'>" + modem + " </span>" + "<button id='naamwijzig' class='wijzig' onclick='modemWijzig()'>Wijzig</button></p>");
+		document.write("<p class = 'modem'><span class='pre-info'>Modem: </span>" + "<span id = 'modem'>" + modem + " </span>" + "<button id='naamwijzig' class='wijzig' onclick='modemWijzig()'>Wijzig</button></p>");
 	}
 }
 
