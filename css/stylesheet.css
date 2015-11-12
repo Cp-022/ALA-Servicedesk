@@ -34,6 +34,8 @@ html{
 .grandh1{
 	text-align:center;
 	font-size:40px;
+	position:relative;
+	margin-top:7%;
 }
 
 .wijzig{
@@ -63,6 +65,7 @@ html{
 
 #nav nav ol li a{
 	text-decoration:none;
+	color:white;
 }
 
 .img1{
