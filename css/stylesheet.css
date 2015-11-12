@@ -51,6 +51,10 @@ html{
 	float:center;
 }
 
+#nav nav ol li a{
+	text-decoration:none;
+}
+
 #nav nav ol{
 	word-spacing:50px;
 }
