@@ -43,6 +43,16 @@ html{
 #nav{
 	float:center;
 	text-align:center;
+	position:absolute;
+	top:0%;
+	left:0%;
+	height:8%;
+	width:100%;
+	background-image:url("../img/navigation.jpg");
+}
+
+#nav nav ol{
+	word-spacing:50px;
 }
 
 #nav nav ol li{
@@ -55,6 +65,8 @@ html{
 	text-decoration:none;
 }
 
-#nav nav ol{
-	word-spacing:50px;
+.img1{
+	height:0%;
+	width:0%;
+	visibility:hidden;
 }
