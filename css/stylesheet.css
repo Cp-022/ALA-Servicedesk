@@ -42,27 +42,19 @@ html{
 	/*EMPTY*/	
 }
 
-#nav{
-	float:center;
-	text-align:center;
-	position:absolute;
-	top:0%;
-	left:0%;
-	height:8%;
-	width:100%;
-	background-image:url("../img/navigation.jpg");
-}
-
-#nav nav ol{
-	word-spacing:50px;
-}
-
-#nav nav ol li{
-	list-style-type:none;
-	display:inline-block;
-	float:center;
-}
-
-#nav nav ol li a{
+a{
 	text-decoration:none;
+	color: #fff;
+}
+
+.button{
+	background-color: #333;
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	letter-spacing: 1.3px;
+	padding: 16px 40px;
+	text-decoration: none;
+	text-transform: uppercase;
 }
