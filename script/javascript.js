@@ -1,7 +1,9 @@
 /*Made by Cp any use of copy/paste of this code WILL be reported to the copy n paste police!!, no seriously
 feel free to copy my code but PLEASE JUST GIVE ME CREDIT -__- Have a nice day*/
 
-alert("U start nu de log")
+/* THIS IS THE KLACHT SCRIPT */
+
+alert("U start nu de log");
 nameAsk();
 datumAsk();
 modemAsk();
