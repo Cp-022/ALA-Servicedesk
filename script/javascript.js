@@ -3,10 +3,27 @@ feel free to copy my code but PLEASE JUST GIVE ME CREDIT -__- Have a nice day*/
 
 /* THIS IS THE KLACHT SCRIPT */
 
-alert("U start nu de log");
-nameAsk();
-datumAsk();
-modemAsk();
+
+function klachtRun(){
+	alert("klacht eh");
+	nameAsk();
+	datumAsk();
+	modemAsk();
+}
+
+function storingRun(){
+	alert("storing eh");
+	nameAsk();
+	datumAsk();
+	modemAsk();
+}
+
+function abnmtRun(){
+	alert("abbo eh");
+	nameAsk();
+	datumAsk();
+	modemAsk();
+}
 
 function nameAsk() {
 	naam = prompt("Geef de naam");
