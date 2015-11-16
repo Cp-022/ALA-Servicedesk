@@ -42,6 +42,10 @@ html{
 	/*EMPTY*/	
 }
 
+#container{
+	display:inline-block;
+}
+
 a{
 	text-decoration:none;
 	color: #fff;
@@ -57,4 +61,17 @@ a{
 	padding: 16px 40px;
 	text-decoration: none;
 	text-transform: uppercase;
+	display:inline-block;
+}
+
+#klacht{
+	/*EMPTY*/		
+}
+
+#storing{
+	/*EMPTY*/
+}
+
+#abonnement{
+	/*EMPTY*/
 }
