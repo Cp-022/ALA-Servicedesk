@@ -43,10 +43,8 @@ html{
 }
 
 #container{
-	margin-left:auto;
-	margin-right:auto;
-	width:30.25%;
-	height:25%;
+	left:0%;
+	position:relative;
 }
 
 a{
@@ -55,25 +53,27 @@ a{
 }
 
 .button{
-	background-color: #333;
-	color: #fff;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 600;
-	font-size: 18px;
-	letter-spacing: 1.3px;
-	padding: 16px 40px;
-	text-decoration: none;
-	text-transform: uppercase;
+	color:black;
+}
+
+.button a{
+	color:black;
 }
 
 #klacht{
-	display:inline-block;
+	position:relative;
+	left:35%;
+	right:75%;
 }
 
 #storing{
-	display:inline-block;
+	position:relative;
+	left:45%;
+	right:50%;
 }
 
 #abonnement{
-	display:inline-block;
+	position:relative;
+	left:55%;
+	right:25%;
 }
