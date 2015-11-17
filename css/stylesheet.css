@@ -4,10 +4,13 @@ feel free to copy my code but PLEASE JUST GIVE ME CREDIT -__-  Have a nice day*/
 html{
 	height:98%;
 	width:auto;
+	background-color:#f1f2f2;
 }
 
 #script{
 	border:1px solid black;
+	width:50%;
+	margin-left:25%;
 }
 
 .pre-info{
@@ -20,15 +23,15 @@ html{
 }
 
 .naam{
-	/*EMPTY*/
+	font-family:"Verdana";
 }
 
 .datum{
-	/*EMPTY*/
+	font-family:"Verdana";
 }
 
 .modem{
-	/*EMPTY*/	
+	font-family:"Verdana";	
 }
 
 .grandh1{

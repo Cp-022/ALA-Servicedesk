@@ -4,8 +4,8 @@ feel free to copy my code but PLEASE JUST GIVE ME CREDIT -__- Have a nice day*/
 function klachtRun(){
 	alert("klacht eh");
 	nameAsk();
-	datumAsk();
 	modemAsk();
+	datumAsk();
 }
 
 function storingRun(){
