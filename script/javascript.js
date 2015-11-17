@@ -3,9 +3,9 @@ feel free to copy my code but PLEASE JUST GIVE ME CREDIT -__- Have a nice day*/
 
 function setAll(){
 	jaNu = "De klant kan naar www.nu.nl";
-	neeNu = "De klant kan niet naar www.nu.nl";
-	jaRefresh = "De website reageert snel na het herladen";
-	neeRefresh = "De website reageert traag na het herladen";
+	neeNu = "De klant kan niet naar www.nu.nl,";
+	jaRefresh = "De website reageert snel na het herladen.";
+	neeRefresh = "De website reageert traag na het herladen.";
 	refresh = null;
 	internet = null;
 }
@@ -70,19 +70,19 @@ function internetAsk() {
 	if (internet == true){
 		refresh = confirm("Laadt de pagina snel als u vaak op F5 drukt?");
 		if (refresh == true){
-			document.write("<p class = 'internet'><span class='pre-info'>Internet: </span>" + "<span id = 'internet'>" + jaNu + jaRefresh + "</span>" + "<button id='naamwijzig' class='wijzig' onclick='internetWijzig()'>Wijzig</button></p>");
+			document.write("<p class = 'internet'><span class='pre-info'>Internet: </span>" + "<span id = 'internet'>" + jaNu + " " + jaRefresh + "</span>" + "<button id='naamwijzig' class='wijzig' onclick='internetWijzig()'>Wijzig</button></p>");
 		}
 		else{
-			document.write("<p class = 'internet'><span class='pre-info'>Internet: </span>" + "<span id = 'internet'>" + jaNu + neeRefresh + "</span>" + "<button id='naamwijzig' class='wijzig' onclick='internetWijzig()'>Wijzig</button></p>");
+			document.write("<p class = 'internet'><span class='pre-info'>Internet: </span>" + "<span id = 'internet'>" + jaNu + " " + neeRefresh + "</span>" + "<button id='naamwijzig' class='wijzig' onclick='internetWijzig()'>Wijzig</button></p>");
 		}
 	}
 	else if(internet == false){
 		refresh = confirm("Laadt de pagina snel als u vaak op F5 drukt?");
 		if(refresh == true){
-			document.write("<p class = 'internet'><span class='pre-info'>Internet: </span>" + "<span id = 'internet'>" + neeNu + jaRefresh + "</span>" + "<button id='naamwijzig' class='wijzig' onclick='internetWijzig()'>Wijzig</button></p>");
+			document.write("<p class = 'internet'><span class='pre-info'>Internet: </span>" + "<span id = 'internet'>" + neeNu + " " +  jaRefresh + "</span>" + "<button id='naamwijzig' class='wijzig' onclick='internetWijzig()'>Wijzig</button></p>");
 		}
 		else if (refresh == false){
-			document.write("<p class = 'internet'><span class='pre-info'>Internet: </span>" + "<span id = 'internet'>" + neeNu + neeRefresh + "</span>" + "<button id='naamwijzig' class='wijzig' onclick='internetWijzig()'>Wijzig</button></p>");
+			document.write("<p class = 'internet'><span class='pre-info'>Internet: </span>" + "<span id = 'internet'>" + neeNu + " " +  neeRefresh + "</span>" + "<button id='naamwijzig' class='wijzig' onclick='internetWijzig()'>Wijzig</button></p>");
 		}
 	}
 }
@@ -116,17 +116,22 @@ function modemWijzig(){
 
 function internetWijzig(){
 	internet = confirm("Kan de klant naar nu.nl?");
-	if (internet = true){
+	if (internet == true){
 		refresh = confirm("Laadt de pagina snel als u vaak op F5 drukt?");
-		if(refresh = true){
-		document.getElementById("internet").innerHTML =  jaNu + " " + jaRefresh + "</span>";
+		if(refresh == true){
+			document.getElementById("internet").innerHTML =  jaNu + " " + jaRefresh + "</span>";
 		}
-		else{
+		else if(refresh == false){
 			document.getElementById("internet").innterHTML = jaNu + " " + neeRefresh + "</span>";
 		}
 	}
-	else{
+	else if(internet == false){
 		refresh = confirm("Laadt de pagina snel als u vaak op F5 drukt?");
-		
+		if(refresh == true){
+			document.getElementById("internet").innerHTML =  neeNu + " " + jaRefresh + "</span>";
+		}
+		else if(refresh == false){
+			document.getElementById("internet").innerHTML = neeNu + " " + neeRefresh + "</span>"
+		}
 	}
 }
