@@ -5,6 +5,7 @@ function klachtRun(){
 	alert("klacht eh");
 	nameAsk();
 	modemAsk();
+	internetAsk();
 	datumAsk();
 }
 
@@ -51,6 +52,22 @@ function modemAsk() {
 	}
 	else{
 		document.write("<p class = 'modem'><span class='pre-info'>Modem: </span>" + "<span id = 'modem'>" + modem + " </span>" + "<button id='naamwijzig' class='wijzig' onclick='modemWijzig()'>Wijzig</button></p>");
+	}
+}
+
+function internetAsk() {
+	internet = confirm("Kan de klant naar nu.nl?");
+	if (internet = true){
+		refresh = confirm("Laadt de pagina snel als u vaak op F5 drukt?");
+		if(refresh = true){
+			document.write("<p class = 'internet'><span class='pre-info'>Internet: </span>" + "<span id = 'internet'>" + "De klant kan naar n.nl, en de pagina reageert snel als de klant op F5 drukt" + "</span>" + "<button id='naamwijzig' class='wijzig' onclick='internetWijzig()'>Wijzig</button></p>");
+		}
+		else{
+			/*add oplossing */
+		}
+	}
+	else{
+		/*add oplossing */
 	}
 }
 

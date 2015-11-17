@@ -17,21 +17,26 @@ html{
 	float:left;
 }
 
-.naam, .datum, .modem, .klacht {
+.naam, .datum, .modem, .klacht, .internet{
 	font-size:20px;
 	text-align:center;
+	font-family:"Verdana";
 }
 
 .naam{
-	font-family:"Verdana";
+	/*EMPTY*/
 }
 
 .datum{
-	font-family:"Verdana";
+	/*EMPTY*/
 }
 
 .modem{
-	font-family:"Verdana";	
+	/*EMPTY*/
+}
+
+.internet{
+	/*EMPTY*/
 }
 
 .grandh1{
@@ -42,7 +47,7 @@ html{
 }
 
 .wijzig{
-	/*EMPTY*/	
+	/*EMPTY*/
 }
 
 #container{
