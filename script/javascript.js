@@ -60,7 +60,7 @@ function internetAsk() {
 	if (internet = true){
 		refresh = confirm("Laadt de pagina snel als u vaak op F5 drukt?");
 		if(refresh = true){
-			document.write("<p class = 'internet'><span class='pre-info'>Internet: </span>" + "<span id = 'internet'>" + "De klant kan naar n.nl, en de pagina reageert snel als de klant op F5 drukt" + "</span>" + "<button id='naamwijzig' class='wijzig' onclick='internetWijzig()'>Wijzig</button></p>");
+			document.write("<p class = 'internet'><span class='pre-info'>Internet: </span>" + "<span id = 'internet'>" + "De klant kan naar nu.nl, en de pagina reageert snel als de klant op F5 drukt " + "</span>" + "<button id='naamwijzig' class='wijzig' onclick='internetWijzig()'>Wijzig</button></p>");
 		}
 		else{
 			/*add oplossing */
@@ -95,5 +95,21 @@ function modemWijzig(){
 	}
 	else{
 		document.getElementById("modem").innerHTML = modem;	
+	}
+}
+
+function internetWijzig(){
+	internet = confirm("Kan de klant naar nu.nl?");
+	if (internet = true){
+		refresh = confirm("Laadt de pagina snel als u vaak op F5 drukt?");
+		if(refresh = true){
+		document.getElementById("internet").innerHTML =  "De klant kan naar nu.nl, en de pagina reageert snel als de klant op F5 drukt " + "</span>";
+		}
+		else{
+			/*add oplossing */
+		}
+	}
+	else{
+		/*add oplossing */
 	}
 }
