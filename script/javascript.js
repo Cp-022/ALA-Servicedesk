@@ -6,6 +6,10 @@ function setAll(){
 	neeNu = "De klant kan niet naar www.nu.nl,";
 	jaRefresh = "De website reageert snel na het herladen.";
 	neeRefresh = "De website reageert traag na het herladen.";
+	reNuTrue = "Er zijn geen problemen";
+	reTrueNuFalse = "Herstart de router";
+	reFalseNuTrue = "Herstart de router";
+	reFalseNuFalse = "Herstart de router";
 	refresh = null;
 	internet = null;
 }
@@ -83,6 +87,17 @@ function internetAsk() {
 		}
 		else if (refresh == false){
 			document.write("<p class = 'internet'><span class='pre-info'>Internet: </span>" + "<span id = 'internet'>" + neeNu + " " +  neeRefresh + "</span>" + "<button id='naamwijzig' class='wijzig' onclick='internetWijzig()'>Wijzig</button></p>");
+		}
+	}
+}
+
+function oplossingPrint(){
+	if  (internet == true){
+		if(refresh == true){
+			document.write("<p class = 'solve'><span class='pre-info'>Oplossing: </span>" + "<span id = 'solve'>" + reTrueNuTrue + "</span>" + "</p>");
+		}
+		else if(refresh == false){
+			document.write("<p class = 'solve'><span class='pre-info'>Oplossing: </span>" + "<span id = 'solve'>" + reFalseNuTrue + "</span>" + "</p>");
 		}
 	}
 }
