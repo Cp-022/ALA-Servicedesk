@@ -43,7 +43,7 @@ function abnmtRun(){
 
 function nameAsk() {
 	naam = prompt("Geef de naam");
-	if (naam.length === 0){
+	if (naam.length < 1){
 		alert("Geen naam gegeven");
 		nameAsk();
 	}
@@ -54,17 +54,12 @@ function nameAsk() {
 
 function datumAsk() {
 	datum = Date();
-	if (datum.length === 0){
-		datum = Date();
-	}
-	else{
 		document.write("<p class = 'datum'><span class='pre-info'>Datum: </span>" + datum + "</p>");
-	}
 }
 
 function modemAsk() {
 	modem = prompt("Wat voor type modem gebruikt de klant?");
-	if (modem.length === 0){
+	if (modem.length < 1){
 		alert("Geef een geldige modem op");
 		modemAsk();
 	}
@@ -121,7 +116,7 @@ function reset(){
 
 function naamWijzig(){
 	naam = prompt("Geef de naam");
-	if (naam.length === 0){
+	if (naam.length < 1){
 		alert("Geen naam gegeven");
 		nameAsk();
 	}
@@ -132,7 +127,7 @@ function naamWijzig(){
 
 function modemWijzig(){
 	modem = prompt("Wat voor type modem gebruikt de klant?");
-	if (modem.length === 0){
+	if (modem.length < 1){
 		alert("Geef een geldige modem op");
 		modemAsk();
 	}
