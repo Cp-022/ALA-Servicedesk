@@ -28,15 +28,17 @@ function klachtRun(){
 function storingRun(){
 	alert("storing eh");
 	nameAsk();
-	datumAsk();
 	modemAsk();
+	datumAsk();
+	document.write("<button class = 'button' onclick = 'reset()' id = 'reset'>Herstart</button>");
 }
 
 function abnmtRun(){
 	alert("abbo eh");
 	nameAsk();
-	datumAsk();
 	modemAsk();
+	datumAsk();
+	document.write("<button class = 'button' onclick = 'reset()' id = 'reset'>Herstart</button>");
 }
 
 function nameAsk() {
