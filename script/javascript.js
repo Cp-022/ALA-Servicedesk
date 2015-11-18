@@ -20,7 +20,7 @@ function klachtRun(){
 	nameAsk();
 	modemAsk();
 	internetAsk();
-	oplossingPrint();
+	oplossingPrintKlacht();
 	datumAsk();
 }
 
@@ -92,7 +92,7 @@ function internetAsk() {
 	}
 }
 
-function oplossingPrint(){
+function oplossingPrintKlacht(){
 	if (internet == true){
 		if(refresh == true){
 			document.write("<p class = 'solve'><span class='pre-info'>Oplossing: </span>" + "<span id = 'solve'>" + reTrueNuTrue + "</span>" + "</p>");
