@@ -6,10 +6,10 @@ function setAll(){
 	neeNu = "De klant kan niet naar www.nu.nl,";
 	jaRefresh = "De website reageert snel na het herladen.";
 	neeRefresh = "De website reageert traag na het herladen.";
-	reNuTrue = "Er zijn geen problemen";
-	reTrueNuFalse = "Herstart de router";
-	reFalseNuTrue = "Herstart de router";
-	reFalseNuFalse = "Herstart de router";
+	reTrueNuTrue = "Alles werkt zoals het hoort, geen oplossing vereist.";
+	reTrueNuFalse = "Herstart de router 1.";
+	reFalseNuTrue = "Herstart de router 2.";
+	reFalseNuFalse = "Herstart de router 3.";
 	refresh = null;
 	internet = null;
 }
@@ -20,6 +20,7 @@ function klachtRun(){
 	nameAsk();
 	modemAsk();
 	internetAsk();
+	oplossingPrint();
 	datumAsk();
 }
 
@@ -92,12 +93,20 @@ function internetAsk() {
 }
 
 function oplossingPrint(){
-	if  (internet == true){
+	if (internet == true){
 		if(refresh == true){
 			document.write("<p class = 'solve'><span class='pre-info'>Oplossing: </span>" + "<span id = 'solve'>" + reTrueNuTrue + "</span>" + "</p>");
 		}
 		else if(refresh == false){
 			document.write("<p class = 'solve'><span class='pre-info'>Oplossing: </span>" + "<span id = 'solve'>" + reFalseNuTrue + "</span>" + "</p>");
+		}
+	}
+	else if (internet == false){
+		if(refresh == true){
+			document.write("<p class = 'solve'><span class='pre-info'>Oplossing: </span>" + "<span id = 'solve'>" + reTrueNuFalse + "</span>" + "</p>");			
+		}
+	else if(refresh == false){
+		document.write("<p class = 'solve'><span class='pre-info'>Oplossing: </span>" + "<span id = 'solve'>" + reFalseNuFalse + "</span>" + "</p>");
 		}
 	}
 }
