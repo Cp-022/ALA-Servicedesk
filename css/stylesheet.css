@@ -98,3 +98,8 @@ a{
 	left:55%;
 	right:25%;
 }
+
+#reset{
+	display:inline-box;
+	margin-left:50%;
+}

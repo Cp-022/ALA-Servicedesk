@@ -22,6 +22,7 @@ function klachtRun(){
 	internetAsk();
 	oplossingPrintKlacht();
 	datumAsk();
+	document.write("<button class = 'button' onclick = 'reset()' id = 'reset'>Herstart</button>");
 }
 
 function storingRun(){
