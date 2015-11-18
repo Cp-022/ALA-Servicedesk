@@ -67,9 +67,14 @@ a{
 .button{
 	color:black;
 	border: 1px #913FTF;
-	border-radius:3px;
-	margin-left:auto;
 	margin-right:auto;
+	margin-left:auto;
+	border-radius:3px;
+	transition: all .2s ease-in-out;
+}
+
+.button:hover{
+	transform: scale(1.5);
 }
 
 .button a{
