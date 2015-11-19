@@ -7,7 +7,7 @@ html{
 	background-color:white;
 }
 
-#script{
+#script1{
 	border:1px solid black;
 	width:50%;
 	margin-left:25%;
@@ -44,10 +44,16 @@ html{
 }
 
 .grandh1{
-	text-align:center;
+	text-align:left;
 	font-size:40px;
 	position:relative;
-	margin-top:7%;
+	margin-top:4%;
+	font-family:SansationLight;
+	width:100%;
+}
+
+.littleh1{
+	text-align:center;
 	font-family:SansationLight;
 }
 
@@ -56,8 +62,11 @@ html{
 }
 
 #container{
+	padding-top:2%;
+	padding-bottom:2%;
 	left:0%;
 	position:relative;
+	background-color:blue;
 }
 
 a{
@@ -82,22 +91,32 @@ a{
 	text-decoration:none;
 }
 
+#buttoncontainer{
+	background-color:white;
+	position:absolute;
+	color:#fff;
+	top:180%;
+	left:50%;
+	padding:15px;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+
 #klacht{
 	position:relative;
-	left:35%;
-	right:75%;
+	margin-right:10px;
 }
 
 #storing{
 	position:relative;
-	left:45%;
-	right:50%;
+	margin-right:10px;
+	margin-left:10px;
 }
 
 #abonnement{
 	position:relative;
-	left:55%;
-	right:25%;
+	margin-left:10px;
 }
 
 #reset{
