@@ -141,7 +141,7 @@ function internetWijzig(){
 	if (internet == true){
 		refresh = confirm("Laadt de pagina snel als u vaak op F5 drukt?");
 		if(refresh == true){
-			document.getElementById("internet").innerHTML =  jaNu + " " + jaRefresh + "</span>";
+			document.getElementById("internet").innerHTML = jaNu + " " + jaRefresh + "</span>";
 		}
 		else if(refresh == false){
 			document.getElementById("internet").innterHTML = jaNu + " " + neeRefresh + "</span>";
