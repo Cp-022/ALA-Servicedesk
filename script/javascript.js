@@ -47,7 +47,6 @@ function klachtRun(){
 	internetAsk();
 	oplossingPrintKlacht();
 	callAsk();
-	tvAsk();
 	datumAsk();
 	document.write("<button class = 'button' onclick = 'reset()' id = 'reset'>Herstart</button></div>");
 	showAll();
@@ -140,17 +139,21 @@ function oplossingPrintKlacht(){
 }
 
 function callAsk(){
-	call = prompt("Heeft u problemen met bellen?");
+	call = confirm("Heeft u problemen met bellen?");
 	if (call == true){
-		toon = prompt("Hoort u de kiestoon als u op een getal drukt?");
+		toon = confirm("Hoort u de kiestoon als u op een getal drukt?");
 		if (toon == true){
-			callPhone = prompt("Kunt u bellen met bijvoorbeeld een mobiel nummer?");
+			callPhone = confirm("Kunt u bellen met bijvoorbeeld een mobiel nummer?");
 			if (callPhone == true){
 				/* document.write */
 				tvAsk();
 			}
+			else if (callPhone == false){
+				/*document.write */
+				tvAsk();
+			}
 		}
-		else if (callPhone == false){
+		else if(toon == false){
 			/*document.write */
 			tvAsk();
 		}
@@ -162,7 +165,24 @@ function callAsk(){
 }
 
 function tvAsk(){
-	
+	tv = confirm("Heeft u problemen met de TV");
+	if (tv == true){
+		funAmmountTv();
+	}
+	else if (tv == false){
+		/*document.write */
+	}
+}
+
+function funAmmountTv(){
+	ammountTv = prompt("Hoeveel TV's heeft de klant?");
+	if (ammountTv.length < 1){
+		alert("Geef een geldig getal op");
+		funAmmountTv();
+	}
+	else{
+		/*document.write*/
+	}
 }
 
 function reset(){
