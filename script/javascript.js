@@ -22,7 +22,7 @@ function klachtRun(){
 	internetAsk();
 	oplossingPrintKlacht();
 	datumAsk();
-	document.write("<button class = 'button' onclick = 'reset()' id = 'reset'>Herstart</button>");
+	document.write("<button class = 'button' onclick = 'reset()' id = 'reset'>Herstart</button></div>");
 }
 
 function storingRun(){
@@ -48,7 +48,7 @@ function nameAsk() {
 		nameAsk();
 	}
 	else {
-		document.write("<p class = 'naam'><span class='pre-info'>Naam: </span>" + "<span id = 'naam'>" + naam + " </span>" + "<button id='naamwijzig' class='wijzig' onclick='naamWijzig()'>Wijzig</button></p>");
+		document.write("<div id='scriptPrint'><p class = 'naam'><span class='pre-info'>Naam: </span>" + "<span id = 'naam'>" + naam + " </span>" + "<button id='naamwijzig' class='wijzig' onclick='naamWijzig()'>Wijzig</button></p>");
 	}
 }
 
