@@ -62,12 +62,21 @@ html{
 	/*EMPTY*/
 }
 
-#container{
+#h1{
 	padding-top:2%;
 	padding-bottom:2%;
 	left:0%;
 	position:relative;
+	width:100%;
 	background-color:blue;
+}
+
+#container{
+	padding-top:2%;
+	padding-bottom:2%;
+	left:0%;
+	width:100%;
+	position:absolute;
 }
 
 a{

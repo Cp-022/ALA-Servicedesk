@@ -2,6 +2,7 @@
 feel free to copy my code but PLEASE JUST GIVE ME CREDIT -__- Have a nice day*/
 
 function setAll(){
+	hideAll();
 	jaNu = "De klant kan naar www.nu.nl, ";
 	neeNu = "De klant kan niet naar www.nu.nl, ";
 	jaRefresh = "de website reageert snel na het herladen.";
@@ -23,6 +24,7 @@ function klachtRun(){
 	oplossingPrintKlacht();
 	datumAsk();
 	document.write("<button class = 'button' onclick = 'reset()' id = 'reset'>Herstart</button></div>");
+	showAll();
 }
 
 function storingRun(){
@@ -31,6 +33,7 @@ function storingRun(){
 	modemAsk();
 	datumAsk();
 	document.write("<button class = 'button' onclick = 'reset()' id = 'reset'>Herstart</button>");
+	showAll();
 }
 
 function abnmtRun(){
@@ -39,6 +42,7 @@ function abnmtRun(){
 	modemAsk();
 	datumAsk();
 	document.write("<button class = 'button' onclick = 'reset()' id = 'reset'>Herstart</button>");
+	showAll();
 }
 
 function nameAsk() {
@@ -156,4 +160,12 @@ function internetWijzig(){
 			document.getElementById("internet").innerHTML = neeNu + " " + neeRefresh + "</span>"
 		}
 	}
+}
+
+function hideAll(){
+	document.getElementById("container").style.cssText = "display:none;"	
+}
+
+function showAll(){
+	document.getElementById("container").style.cssText = "display:show;"
 }
