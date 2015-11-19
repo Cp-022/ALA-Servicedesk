@@ -4,7 +4,7 @@ feel free to copy my code but PLEASE JUST GIVE ME CREDIT -__-  Have a nice day*/
 html{
 	height:98%;
 	width:auto;
-	background-color:#f1f2f2;
+	background-color:white;
 }
 
 #script{
@@ -48,6 +48,7 @@ html{
 	font-size:40px;
 	position:relative;
 	margin-top:7%;
+	font-family:SansationLight;
 }
 
 .wijzig{
@@ -102,4 +103,9 @@ a{
 #reset{
 	display:inline-box;
 	margin-left:50%;
+}
+
+@font-face{
+	font-family: SansationLight;
+	src: url(../fonts/Sansation_Light.ttf)
 }
