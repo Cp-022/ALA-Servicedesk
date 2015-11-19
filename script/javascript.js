@@ -46,6 +46,8 @@ function klachtRun(){
 	modemAsk();
 	internetAsk();
 	oplossingPrintKlacht();
+	callAsk();
+	tvAsk();
 	datumAsk();
 	document.write("<button class = 'button' onclick = 'reset()' id = 'reset'>Herstart</button></div>");
 	showAll();
@@ -144,13 +146,23 @@ function callAsk(){
 		if (toon == true){
 			callPhone = prompt("Kunt u bellen met bijvoorbeeld een mobiel nummer?");
 			if (callPhone == true){
-				
+				/* document.write */
+				tvAsk();
 			}
+		}
+		else if (callPhone == false){
+			/*document.write */
+			tvAsk();
 		}
 	}
 	else if(call == false){
-		
+		/*document.write */
+		tvAsk();
 	}
+}
+
+function tvAsk(){
+	
 }
 
 function reset(){
