@@ -1,30 +1,6 @@
 /*Made by Cp any use of copy/paste of this code WILL be reported to the copy n paste police!!, no seriously
 feel free to copy my code but PLEASE JUST GIVE ME CREDIT -__- Have a nice day*/
 
-/* Just a quick self note for whats what:
-	hideAll -- hides all content until script is finshed
-	jaNu -- prefix sentence of yes to the question of www.nu.nl
-	neeNu -- prefix sentence of no to the question of www.nu.nl
-	jaRefresh -- prefix sentence of yes to the question of F5 spam
-	neeRefresh-- prefix sentence of no to the question of F5 spam
-	reTrueNuTrue -- nu.nl is true and refresh is true
-	reTrueNuFalse -- nu.nl is false and refresh is true
-	reFalseNuTrue -- nu.nl is true and refresh is false
-	reFalseNUFalse -- nu.nl is false and refresh is false
-	setAll -- loads every lil pre made bit of code
-	klachtRun -- runs the klacht procedure
-	nameAsk -- asks for clients name
-	modemAsk -- asks for clients modem
-	internetAsk -- asks 2 questions ( F5 and nu.nl)
-	oplossingPrintKlacht -- prints the result of the 2 questions
-	datumAsk -- seeks the date 
-	showAll -- reveals the page
-	storingRun -- same as klachtRun but for storing
-	abnmtRun -- same as klacht but for abbonement
-	naam -- name of client
-	NEED MORE EXPLAINATION
-*/
-
 function setAll(){
 	hideAll();
 	jaNu = "De klant kan naar www.nu.nl, ";
