@@ -2,8 +2,8 @@
 feel free to copy my code but PLEASE JUST GIVE ME CREDIT -__- Have a nice day*/
 
 function setAll(){
-	jaNu = "De klant kan naar www.nu.nl maar ";
-	neeNu = "De klant kan niet naar www.nu.nl maar ";
+	jaNu = "De klant kan naar www.nu.nl, ";
+	neeNu = "De klant kan niet naar www.nu.nl, ";
 	jaRefresh = "de website reageert snel na het herladen.";
 	neeRefresh = "de website reageert traag na het herladen.";
 	reTrueNuTrue = "Alles werkt zoals het hoort, geen oplossing vereist.";
