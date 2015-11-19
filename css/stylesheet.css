@@ -79,10 +79,6 @@ html{
 	position:absolute;
 }
 
-a{
-	color: #fff;
-}
-
 .button{
 	color:black;
 	border: 1px #913FTF;
@@ -96,7 +92,7 @@ a{
 	transform: scale(1.5);
 }
 
-.button a{
+.button a, .grandh1 a{
 	color:black;
 	text-decoration:none;
 }
@@ -105,7 +101,7 @@ a{
 	background-color:white;
 	position:absolute;
 	color:#fff;
-	top:180%;
+	top:130%;
 	left:50%;
 	padding:15px;
 	-ms-transform: translateX(-50%) translateY(-50%);
@@ -114,17 +110,20 @@ a{
 }
 
 #klacht{
+	font-size:20px;
 	position:relative;
 	margin-right:10px;
 }
 
 #storing{
+	font-size:20px;
 	position:relative;
 	margin-right:10px;
 	margin-left:10px;
 }
 
 #abonnement{
+	font-size:20px;
 	position:relative;
 	margin-left:10px;
 }
