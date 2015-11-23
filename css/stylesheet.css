@@ -15,6 +15,7 @@ html{
 	border:1px solid black;
 	width:50%;
 	margin-left:25%;
+	background-color:white;
 }
 
 .pre-info{
@@ -72,7 +73,7 @@ html{
 	left:0%;
 	position:relative;
 	width:100%;
-	background-color:blue;
+	background-color:#3115ff;
 }
 
 #container{
@@ -111,6 +112,10 @@ html{
 	-ms-transform: translateX(-50%) translateY(-50%);
 	-webkit-transform: translate(-50%,-50%);
 	transform: translate(-50%,-50%);
+}
+
+#script {
+	/*EMPTY*/
 }
 
 #klacht{
