@@ -13,6 +13,7 @@ function setAll(){
 	reFalseNuFalse = "Herstart de router 3.";
 	refresh = null;
 	internet = null;
+	datum =  new Date();
 }
 
 function klachtRun(){
@@ -47,7 +48,6 @@ function abnmtRun(){
 }
 
 function sayHello() {
-	datum =  new Date();
 	var n = datum.getHours();
 	if (n === 12 || n < 12){
 		alert("Goedemorgen!");
