@@ -217,3 +217,8 @@ function hideAll(){
 function showAll(){
 	document.getElementById("container").style.cssText = "display:show;"
 }
+
+document.onkeypress = function (r) {
+    r = r || window.event;
+	window.location.reload();
+};
