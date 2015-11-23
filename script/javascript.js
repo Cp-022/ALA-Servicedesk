@@ -17,7 +17,7 @@ function setAll(){
 
 function klachtRun(){
 	setAll();
-	alert("klacht eh");
+	sayHello();
 	nameAsk();
 	modemAsk();
 	internetAsk();
@@ -46,6 +46,20 @@ function abnmtRun(){
 	showAll();
 }
 
+function sayHello() {
+	datum =  new Date();
+	var n = datum.getHours();
+	if (n === 12 || n < 12){
+		alert("Goedemorgen!");
+	}
+	else if (n > 18 || n === 18){
+		alert("Goedenavond!");
+	}
+	else{
+		alert("Goedemiddag!");
+	}
+}
+
 function nameAsk() {
 	naam = prompt("Geef de naam");
 	if (naam.length < 1){
@@ -58,8 +72,7 @@ function nameAsk() {
 }
 
 function datumAsk() {
-	datum = Date();
-		document.write("<p class = 'datum'><span class='pre-info'>Datum: </span>" + datum + "</p>");
+	document.write("<p class = 'datum'><span class='pre-info'>Datum: </span>" + datum + "</p>");
 }
 
 function modemAsk() {
