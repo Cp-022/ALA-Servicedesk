@@ -142,6 +142,14 @@ html{
 	margin-left:50%;
 }
 
+.serviceBot{
+	border:0;
+	width:50%;
+	margin-left:50%;
+	height:500px;
+	margin-right:50%;
+}
+
 @font-face{
 	font-family: SansationLight;
 	src: url(../fonts/Sansation_Light.ttf)
