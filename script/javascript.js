@@ -22,9 +22,9 @@ function klachtRun(){
 	nameAsk();
 	modemAsk();
 	internetAsk();
-	oplossingPrintKlacht();
 	callAsk();
 	datumAsk();
+	oplossingPrintKlacht();
 	document.write("<button class = 'button' onclick = 'reset()' id = 'reset'>Herstart</button></div>");
 	showAll();
 }

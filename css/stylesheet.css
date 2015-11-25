@@ -20,11 +20,12 @@ html{
 
 .pre-info{
 	float:left;
+	margin-
 }
 
 .naam, .datum, .modem, .klacht, .internet, .solve, .probleem,.phone{
 	font-size:20px;
-	text-align:center;
+	text-align:left;
 	font-family:"Verdana";
 }
 
