@@ -134,21 +134,21 @@ function callAsk(){
 		if (toon == true){
 			callPhone = confirm("Kunt u bellen met bijvoorbeeld een mobiel nummer?");
 			if (callPhone == true){
-				/* document.write */
+				document.write("<p class =  'phone'><span class='pre-info'>Telefonie: </span>" + "<span id = 'solve'>Alles functioneert goed</span>" + "</p>");
 				tvAsk();
 			}
 			else if (callPhone == false){
-				/*document.write */
+				document.write("<p class =  'phone'><span class='pre-info'>Telefonie: </span>" + "<span id = 'solve'>Er zijn problemen met bellen naar een mobiel nummer</span>" + "</p>");
 				tvAsk();
 			}
 		}
 		else if(toon == false){
-			/*document.write */
+			document.write("<p class =  'phone'><span class='pre-info'>Telefonie: </span>" + "<span id = 'solve'>De klant hoort geen kiestoon</span>" + "</p>");
 			tvAsk();
 		}
 	}
 	else if(call == false){
-		/*document.write */
+		document.write("<p class =  'phone'><span class='pre-info'>Telefonie: </span>" + "<span id = 'solve'>Alles functioneert goed</span>" + "</p>");
 		tvAsk();
 	}
 }
@@ -159,7 +159,7 @@ function tvAsk(){
 		funAmmountTv();
 	}
 	else if (tv == false){
-		/*document.write */
+		document.write("<p class =  'phone'><span class='pre-info'>Tv: </span>" + "<span id = 'solve'>Alles functioneert goed</span>" + "</p>");
 	}
 }
 
@@ -170,7 +170,7 @@ function funAmmountTv(){
 		funAmmountTv();
 	}
 	else{
-		/*document.write*/
+		document.write("<p class =  'phone'><span class='pre-info'>Tv: </span>" + "<span id = 'solve'>De klant heeft " + ammountTv + " TV's </span>" + "</p>");
 	}
 }
 
