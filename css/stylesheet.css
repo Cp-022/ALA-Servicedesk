@@ -22,7 +22,7 @@ html{
 	float:left;
 }
 
-.naam, .datum, .modem, .klacht, .internet, .solve{
+.naam, .datum, .modem, .klacht, .internet, .solve, .probleem{
 	font-size:20px;
 	text-align:center;
 	font-family:"Verdana";

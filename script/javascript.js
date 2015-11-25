@@ -14,7 +14,6 @@ function setAll(){
 	refresh = null;
 	internet = null;
 	datum =  new Date();
-	problem = "";
 }
 
 function klachtRun(){
@@ -24,7 +23,6 @@ function klachtRun(){
 	modemAsk();
 	internetAsk();
 	oplossingPrintKlacht();
-	problemPrint();
 	callAsk();
 	datumAsk();
 	document.write("<button class = 'button' onclick = 'reset()' id = 'reset'>Herstart</button></div>");
@@ -32,28 +30,20 @@ function klachtRun(){
 }
 
 function storingRun(){
-	setAll();
-	sayHello();
+	alert("storing eh");
 	nameAsk();
 	modemAsk();
-	internetAsk();
-	oplossingPrintKlacht();
-	callAsk();
 	datumAsk();
-	document.write("<button class = 'button' onclick = 'reset()' id = 'reset'>Herstart</button></div>");
+	document.write("<button class = 'button' onclick = 'reset()' id = 'reset'>Herstart</button>");
 	showAll();
 }
 
 function abnmtRun(){
-	setAll();
-	sayHello();
+	alert("abbo eh");
 	nameAsk();
 	modemAsk();
-	internetAsk();
-	oplossingPrintKlacht();
-	callAsk();
 	datumAsk();
-	document.write("<button class = 'button' onclick = 'reset()' id = 'reset'>Herstart</button></div>");
+	document.write("<button class = 'button' onclick = 'reset()' id = 'reset'>Herstart</button>");
 	showAll();
 }
 
@@ -104,18 +94,15 @@ function internetAsk() {
 			document.write("<p class = 'internet'><span class='pre-info'>Internet: </span>" + "<span id = 'internet'>" + jaNu + " " + jaRefresh + "</span>" + "<button id='naamwijzig' class='wijzig' onclick='internetWijzig()'>Wijzig</button></p>");
 		}
 		else{
-			problem += "Herhalend F5 drukken";
 			document.write("<p class = 'internet'><span class='pre-info'>Internet: </span>" + "<span id = 'internet'>" + jaNu + " " + neeRefresh + "</span>" + "<button id='naamwijzig' class='wijzig' onclick='internetWijzig()'>Wijzig</button></p>");
 		}
 	}
 	else if(internet == false){
-		problem += "www.nu.nl";
 		refresh = confirm("Laadt de pagina snel als u vaak op F5 drukt?");
 		if(refresh == true){
 			document.write("<p class = 'internet'><span class='pre-info'>Internet: </span>" + "<span id = 'internet'>" + neeNu + " " +  jaRefresh + "</span>" + "<button id='naamwijzig' class='wijzig' onclick='internetWijzig()'>Wijzig</button></p>");
 		}
 		else if (refresh == false){
-			problem += "Herhalend F5 drukken";
 			document.write("<p class = 'internet'><span class='pre-info'>Internet: </span>" + "<span id = 'internet'>" + neeNu + " " +  neeRefresh + "</span>" + "<button id='naamwijzig' class='wijzig' onclick='internetWijzig()'>Wijzig</button></p>");
 		}
 	}
@@ -140,10 +127,6 @@ function oplossingPrintKlacht(){
 	}
 }
 
-function problemPrint(){
-	document.write("<p class = 'probleem' <span class='pre-info'>Problemen: </span>" + "<span id = 'problem'>" + problem + "</span>" + "</p>");
-}
-
 function callAsk(){
 	call = confirm("Heeft u problemen met bellen?");
 	if (call == true){
@@ -155,12 +138,11 @@ function callAsk(){
 				tvAsk();
 			}
 			else if (callPhone == false){
-				problem += "Kan niet bellen met een mobiel nummer";
+				/*document.write */
 				tvAsk();
 			}
 		}
 		else if(toon == false){
-			problem += "Hoort geen kiestoon";
 			/*document.write */
 			tvAsk();
 		}
@@ -175,7 +157,6 @@ function tvAsk(){
 	tv = confirm("Heeft u problemen met de TV");
 	if (tv == true){
 		funAmmountTv();
-		problem += "Heeft problemen met de TV";
 	}
 	else if (tv == false){
 		/*document.write */
@@ -228,7 +209,6 @@ function internetWijzig(){
 			document.getElementById("internet").innerHTML = jaNu + " " + jaRefresh + "</span>";
 		}
 		else if(refresh == false){
-			problem += "Herhalend F5 drukken";
 			document.getElementById("internet").innterHTML = jaNu + " " + neeRefresh + "</span>";
 		}
 	}
@@ -238,7 +218,6 @@ function internetWijzig(){
 			document.getElementById("internet").innerHTML =  neeNu + " " + jaRefresh + "</span>";
 		}
 		else if(refresh == false){
-			problem += "Herhalend F5 drukken";
 			document.getElementById("internet").innerHTML = neeNu + " " + neeRefresh + "</span>"
 		}
 	}
