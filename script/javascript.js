@@ -25,6 +25,7 @@ function klachtRun(){
 	callAsk();
 	datumAsk();
 	oplossingPrintKlacht();
+	lastPrint();
 	document.write("<button class = 'button' onclick = 'reset()' id = 'reset'>Herstart</button></div>");
 	showAll();
 }
@@ -172,6 +173,10 @@ function funAmmountTv(){
 	else{
 		document.write("<p class =  'phone'><span class='pre-info'>Tv: </span>" + "<span id = 'solve'>De klant heeft " + ammountTv + " TV's </span>" + "</p>");
 	}
+}
+
+function lastPrint(){
+	document.write("<p>Zie Meer <a href = '#'>Internet </a> <a href='#'>Telefoon </a><a href='#'>Tv</a></p>");	
 }
 
 function reset(){
