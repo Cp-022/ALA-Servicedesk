@@ -120,7 +120,7 @@ function oplossingPrintKlacht(){
 	}
 	else if (internet == false){
 		if(refresh == true){
-			document.write("<p class = 'solve'><span class='pre-info'>Oplossing: </span>" + "<span id = 'solve'>" + reTrueNuFalse + "</span>" + "</p>");			
+			document.write("<p class = 'solve'><span class='pre-info'>Oplossing: </span>" + "<span id = 'solve'>" + reTrueNuFalse + "</span>" + "</p>");
 		}
 	else if(refresh == false){
 		document.write("<p class = 'solve'><span class='pre-info'>Oplossing: </span>" + "<span id = 'solve'>" + reFalseNuFalse + "</span>" + "</p>");
@@ -135,21 +135,21 @@ function callAsk(){
 		if (toon == true){
 			callPhone = confirm("Kunt u bellen met bijvoorbeeld een mobiel nummer?");
 			if (callPhone == true){
-				document.write("<p class =  'phone'><span class='pre-info'>Telefonie: </span>" + "<span id = 'solve'>Alles functioneert goed</span>" + "</p>");
+				document.write("<p class =  'phone'><span class='pre-info'>Telefonie: </span>" + "<span id = 'solve'>Alles functioneert goed</span>" + "<button id='naamwijzig' class='wijzig' onclick='callWijzig()'>Wijzig</button></p>");
 				tvAsk();
 			}
 			else if (callPhone == false){
-				document.write("<p class =  'phone'><span class='pre-info'>Telefonie: </span>" + "<span id = 'solve'>Er zijn problemen met bellen naar een mobiel nummer</span>" + "</p>");
+				document.write("<p class =  'phone'><span class='pre-info'>Telefonie: </span>" + "<span id = 'solve'>Er zijn problemen met bellen naar een mobiel nummer</span>" + "<button id='naamwijzig' class='wijzig' onclick='callWijzig()'>Wijzig</button></p>");
 				tvAsk();
 			}
 		}
 		else if(toon == false){
-			document.write("<p class =  'phone'><span class='pre-info'>Telefonie: </span>" + "<span id = 'solve'>De klant hoort geen kiestoon</span>" + "</p>");
+			document.write("<p class =  'phone'><span class='pre-info'>Telefonie: </span>" + "<span id = 'solve'>De klant hoort geen kiestoon</span>" + "<button id='naamwijzig' class='wijzig' onclick='callWijzig()'>Wijzig</button></p>");
 			tvAsk();
 		}
 	}
 	else if(call == false){
-		document.write("<p class =  'phone'><span class='pre-info'>Telefonie: </span>" + "<span id = 'solve'>Alles functioneert goed</span>" + "</p>");
+		document.write("<p class =  'phone'><span class='pre-info'>Telefonie: </span>" + "<span id = 'solve'>Alles functioneert goed</span>" + "<button id='naamwijzig' class='wijzig' onclick='callWijzig()'>Wijzig</button></p>");
 		tvAsk();
 	}
 }
@@ -176,7 +176,7 @@ function funAmmountTv(){
 }
 
 function lastPrint(){
-	document.write("<p>Zie Meer <a href = '#'>Internet </a> <a href='#'>Telefoon </a><a href='#'>Tv</a></p>");	
+	document.write("<p>Zie Meer <a href = '#'>Internet </a> <a href='#'>Telefoon </a><a href='#'>Tv</a></p>");
 }
 
 function reset(){
@@ -191,7 +191,7 @@ function naamWijzig(){
 		nameAsk();
 	}
 	else {
-		document.getElementById("naam").innerHTML = naam;	
+		document.getElementById("naam").innerHTML = naam;
 	}
 }
 
@@ -202,7 +202,7 @@ function modemWijzig(){
 		modemAsk();
 	}
 	else{
-		document.getElementById("modem").innerHTML = modem;	
+		document.getElementById("modem").innerHTML = modem;
 	}
 }
 
@@ -228,8 +228,41 @@ function internetWijzig(){
 	}
 }
 
+function callWijzig(){
+	call = confirm("Heeft u problemen met bellen?");
+	if (call == true){
+		toon = confirm("Hoort u de kiestoon als u op een getal drukt?");
+		if (toon == true){
+			callPhone = confirm("Kunt u bellen met bijvoorbeeld een mobiel nummer?");
+			if (callPhone == true){
+				document.getElementById("solve").innerHTML = "Alles functioneert goed</span>";
+			}
+			else if (callPhone == false){
+				document.getElementById("solve").innerHTML = "Er zijn problemen met bellen naar een mobiel nummer</span>";
+			}
+		}
+		else if(toon == false){
+			document.getElementById("solve").innerHTML = "De klant hoort geen kiestoon</span>";
+		}
+	}
+	else if(call == false){
+		document.getElementById("solve").innerHTML = "Alles functioneert goed</span>";
+	}
+}
+
+function tvWijzig(){
+	ammountTv = prompt("Hoeveel TV's heeft de klant?");
+	if (ammountTv.length < 1){
+		alert("Geef een geldig getal op");
+		funAmmountTv();
+	}
+	else{
+		document.write("<p class =  'phone'><span class='pre-info'>Tv: </span>" + "<span id = 'solvetv'>De klant heeft " + ammountTv + " TV's </span>" + "</p>");
+	}
+}
+
 function hideAll(){
-	document.getElementById("container").style.cssText = "display:none;"	
+	document.getElementById("container").style.cssText = "display:none;"
 }
 
 function showAll(){
