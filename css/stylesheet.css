@@ -4,18 +4,23 @@ feel free to copy my code but PLEASE JUST GIVE ME CREDIT -__-  Have a nice day*/
 html{
 	height:98%;
 	width:auto;
-	background-color:white;
-	background-image: url("../img/rondjefucking2.jpg");
+	background-color:black;
 	background-position: center; 
 	background-repeat: no-repeat;
 }
 
 #scriptPrint{
-	margin-top:2%;
-	border:1px solid black;
-	width:50%;
-	margin-left:25%;
-	background-color:white;
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	background: #666;
+	border: 5px solid #ccc;
+	text-align:left;
+	width: 50%;
+	voice-family: "\"}\"";
+	voice-family:inherit;
 }
 
 .pre-info{
